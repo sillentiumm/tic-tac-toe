@@ -4,6 +4,7 @@ const App = {
             list0: [0,0,0],
             list1: [0,0,0],
             list2: [0,0,0],
+            fin: 0
         }
     },
     methods: {
@@ -23,6 +24,7 @@ const App = {
                             this.list0[2] = -1
                         }
                     }
+                    this.fin = -1
                 }
                 else if(this.list1[0] + this.list1[1] + this.list1[2] < -1) {
                     for (i = 0; i < 3; i++) {
@@ -36,6 +38,7 @@ const App = {
                             this.list1[2] = -1
                         }
                     }
+                    this.fin = -1
                 }
                 else if(this.list2[0] + this.list2[1] + this.list2[2] < -1) {
                     for (i = 0; i < 3; i++) {
@@ -49,6 +52,7 @@ const App = {
                             this.list2[2] = -1
                         }
                     }
+                    this.fin = -1
                 }
                 //1.2
                 else if(this.list0[0] + this.list1[0] + this.list2[0] < -1) {
@@ -61,6 +65,7 @@ const App = {
                     else {
                         this.list2[0] = -1
                     }
+                    this.fin = -1
                 }
                 else if(this.list0[1] + this.list1[1] + this.list2[1] < -1) {
                     if(this.list0[1] == 0) {
@@ -72,6 +77,7 @@ const App = {
                     else {
                         this.list2[1] = -1
                     }
+                    this.fin = -1
                 }
                 else if(this.list0[2] + this.list1[2] + this.list2[2] < -1) {
                     if(this.list0[2] == 0) {
@@ -83,6 +89,7 @@ const App = {
                     else {
                         this.list2[2] = -1
                     }
+                    this.fin = -1
                 }
                 //1.3                
                 else if(this.list0[0] + this.list1[1] + this.list2[2] < -1) {
@@ -92,6 +99,7 @@ const App = {
                     else {
                         this.list0[0] = -1
                     }
+                    this.fin = -1
                 }
                 //1.4
                 else if(this.list0[2] + this.list1[1] + this.list2[0] < -1) {
@@ -101,6 +109,7 @@ const App = {
                     else {
                         this.list0[2] = -1
                     }
+                    this.fin = -1
                 }
                 //2.1
                 else if(li[0] + li[1] + li[2] > 1) {
@@ -228,7 +237,7 @@ const App = {
                         }
                     }
                     else {
-                        console.log('fin')
+                        this.fin = 1
                     }
                 }
             }
@@ -240,7 +249,8 @@ const App = {
             this.list0 =[0,0,0]
             this.list1 =[0,0,0]
             this.list2 =[0,0,0]
+            this.fin = 0
         }
-    }
+    },
 }
 Vue.createApp(App).mount(".main")

@@ -16,6 +16,12 @@
             <div :class="{x: el == 1, 'o': el == -1}" class="random" v-for="(el, idx) in list2" @click="turn(idx, list2)"></div>
         </div>
         <button @click="reset" class="btn">reset</button>
+        <div v-if="fin == 1" class="draw">
+            <div class="draw-text">draw</div>
+        </div>
+        <div v-if="fin == -1" class="lose">
+            <div class="lose-text">lose</div>
+        </div>   
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
