@@ -17,7 +17,7 @@ const App = {
                             this.list0[0] = -1
                         }
                         else if(this.list0[1] == 0) {
-                            this.ist0[1] = -1
+                            this.list0[1] = -1
                         }
                         else {
                             this.list0[2] = -1
