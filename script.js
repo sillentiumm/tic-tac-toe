@@ -30,7 +30,7 @@ const App = {
                             this.list1[0] = -1
                         }
                         else if(this.list1[1] == 0) {
-                            this.ist1[1] = -1
+                            this.list1[1] = -1
                         }
                         else {
                             this.list1[2] = -1
@@ -43,7 +43,7 @@ const App = {
                             this.list2[0] = -1
                         }
                         else if(this.list2[1] == 0) {
-                            this.ist2[1] = -1
+                            this.list2[1] = -1
                         }
                         else {
                             this.list2[2] = -1
