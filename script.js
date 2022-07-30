@@ -153,6 +153,9 @@ const App = {
                 else if(this.list1[0] == 1 && this.list0[1] == 1 && this.list0[0] == 0) {
                     this.list0[0] = - 1
                 }
+                else if(this.list1[1] == 1 && this.list2[2] == 1 && this.list0[2] == 0) {
+                    this.list0[2] = -1 
+                }
                 //3
                 else {
                     if(this.list1[1] == 0) {
